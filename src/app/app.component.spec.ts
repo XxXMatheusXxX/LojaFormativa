@@ -20,10 +20,10 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1')?.textContent).toContain('Popular Products');
   });
  
-  it('3. Verificando a cor do seu botão', () => {
+  it('3. Verificando a cor do botão', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const buttonElement: HTMLButtonElement = fixture.nativeElement.querySelector('button');
+    const buttonElement: HTMLButtonElement = fixture.nativeElement.querySelector('.btn');
     const buttonStyle = window.getComputedStyle(buttonElement);
     expect(buttonStyle.backgroundColor).toBe('rgb(255, 100, 82)');
   });
